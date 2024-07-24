@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp.WelcomePage"
+             Title="WelcomePage"
+             BackgroundColor="#E0CAEE">
+    <StackLayout VerticalOptions="Center"
+             Margin="20"
+             Spacing="0">
+        <Image Source="icon_02d"
+	       HeightRequest="200" />
+        <Label Text="Hava Durumu"
+     	       FontSize="40"
+     	       TextColor ="#59505F" />
+        <Label Text="Uygulaması"
+     	       FontSize="40"
+     	       TextColor="#59505F" />
+        <Label Text="Bu bir hava durumu takip uygulamasıdır. Konumunuzun veya istediğiniz farklı bir konumun hava durumunu takip edebilirsiniz."
+     	       FontSize="Small"
+     	       TextColor="#F8F7F8" />
+        <Button Text="Hadi Başlayalım"
+     	        FontSize="Large"
+     	        BackgroundColor="#59505F"
+     	        WidthRequest="270"
+                Margin="0,50,0,0"
+     	        x:Name="BtnGetStarted"
+                Clicked="BtnGetStarted_Clicked"/>
+    </StackLayout>
+</ContentPage>
